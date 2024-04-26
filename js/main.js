@@ -1,29 +1,35 @@
-// const keyButton = document.querySelectorAll(".keyButton");
-
-// keyButton.forEach((item) => {
-//   // item.addEventListener("keypress", () => console.log("DSDS"));
-//   // console.log(item);
-// });
-
-// function calll(){
-//   console.log("Cd,ajhcvakehds");
-// }
+let pass = [];
 
 const dotContainer = document.querySelector("#dotContainer");
 
-function createDot() {
-  const newDot = document.createElement("span");
-  newDot.classList.add("newDot");
-  dotContainer.appendChild(newDot);
+function createDot(val) {
+  if (pass.length <= 3) {
+    const newDot = document.createElement("span");
+    newDot.classList.add("newDot");
+    dotContainer.appendChild(newDot);
+
+    pass.push(val);
+    console.log(pass);
+  }
 }
 
 function clearDots() {
-  const dot = document.querySelectorAll(".newDot");
-  // console.log(dot);
+  pass = [];
 
-  // dotContainer.children.removeAll();
+  dotContainer.innerHTML = "";
 
   console.log(dotContainer.children);
+  console.log(pass);
 }
 
-const 
+function removeLastNumber() {
+  pass = pass.slice(0, pass.length - 1);
+
+  for (let i = 0; i++; i <= pass.length) {
+    const newDot = document.createElement("span");
+    newDot.classList.add("newDot");
+    dotContainer.appendChild(newDot);
+  }
+
+  console.log(pass);
+}
