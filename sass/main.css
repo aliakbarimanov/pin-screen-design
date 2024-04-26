@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.pinLoginPage {
+  width: 100%;
+  height: 99.5vh;
+  position: relative;
+}
+.pinLoginPage .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.pinLoginPage .bgImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.pinLoginPage .container {
+  width: 100%;
+}
+.pinLoginPage .container .loginBox {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 10px;
+}
+.pinLoginPage .container .loginBox .logo {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+}
+.pinLoginPage .container .loginBox form {
+  width: 70%;
+  height: 60px;
+  margin: 0 auto 40px;
+}
+.pinLoginPage .container .loginBox form .dotContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #c0c0c0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pinLoginPage .container .loginBox form .dotContainer .newDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.pinLoginPage .container .loginBox form input {
+  display: none;
+}
+.pinLoginPage .container .loginBox .keyPad {
+  width: 90%;
+  margin: 50px auto 0;
+}
+.pinLoginPage .container .loginBox .keyPad .keyList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.pinLoginPage .container .loginBox .keyPad .keyList .keyItem {
+  width: 146.6px;
+  height: 60px;
+}
+.pinLoginPage .container .loginBox .keyPad .keyList .keyItem button {
+  width: 100%;
+  height: 100%;
+  background-color: #c0c0c0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  letter-spacing: 3px;
+  border-radius: 10px;
+}
+.pinLoginPage .container .loginBox .keyPad .keyList .keyItem button.special {
+  background-color: #f0f0f0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <section class="pinLoginPage">
+      <div class="overlay"></div>
+      <img src="./img/bgg.jpeg" alt="Cafe wallpaper" class="bgImg" />
+      <div class="container">
+        <div class="loginBox">
+          <div class="logo">CafePOS</div>
+          <form>
+            <div id="dotContainer" class="dotContainer"></div>
+            <input type="password" id="passwordInput" />
+          </form>
+          <div class="keyPad">
+            <ul class="keyList">
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">1</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">2</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">3</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">4</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">5</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">6</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">7</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">8</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">9</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton special" onclick="clearDots()">
+                  Clear
+                </button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton" onclick="createDot()">0</button>
+              </li>
+              <li class="keyItem">
+                <button class="keyButton special" onclick="createDot()">
+                  Delete
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
